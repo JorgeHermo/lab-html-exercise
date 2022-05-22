@@ -1,3 +1,26 @@
+/* general index */
+
+
+/*CSS is not my strong point, i found and copy most of the code*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/*nav*/
+
 header>div {
     padding: 0 25px;
     display: flex;
@@ -24,5 +47,250 @@ nav a {
 
 .blackHeart {
     width: 20px;
+    height: 10px;
     margin-right: 1rem;
+}
+
+.navigation li {
+    padding-left: 15px;
+}
+
+.bottomHeader {
+    justify-content: center;
+    vertical-align: baseline;
+    align-items: center;
+    padding: 7px 0 5px 0;
+}
+
+.bottomHeader>* {
+    padding: 0 10px;
+}
+
+.search input[type="text"] {
+    width: 50vw;
+    position: relative;
+    bottom: 0.2vh;
+    height: 34px;
+    background-color: rgb(245, 245, 245);
+    border: 0;
+    font-size: 0.9em;
+    padding-left: 50px;
+}
+
+.search button {
+    transition: 0.2s;
+    position: relative;
+    bottom: 1px;
+    right: 5.5px;
+    height: 35.5px;
+    padding: 0 12px;
+    border-radius: 0;
+    border: 0px;
+    background-color: #fb3e44;
+    color: white;
+    font-size: 1em;
+}
+
+.search button:hover {
+    color: blue;
+}
+
+#searchbar::-webkit-input-placeholder {
+    padding-left: 45px;
+}
+
+#searchbar::-moz-placeholder {
+    padding-left: 45px;
+}
+
+#searchbar:-ms-input-placeholder {
+    padding-left: 45px;
+}
+
+#searchbar:-moz-placeholder {
+    padding-left: 45px;
+}
+
+.logo {
+    max-width: 300px;
+    font-size: 0.7em;
+}
+
+.npmLogo {
+    width: 50px;
+    height: 15px;
+}
+
+.npmLogo:hover {
+    transition: 0.25s ease;
+    height: 17px;
+}
+
+.magnifyingGlass {
+    position: relative;
+    top: 2px;
+    left: 30px;
+    width: 18px;
+    height: 18px;
+    z-index: 2;
+}
+
+.bottomHeader a {
+    text-decoration: none;
+    color: black;
+    padding: 4.5px 20px;
+}
+
+.joinBtn {
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.joinBtn:hover {
+    transition: 0.3s;
+    background-color: lightgray;
+    color: blue;
+}
+
+.loginBtn {
+    color: lightgray;
+}
+
+.loginBtn:hover {
+    color: blue;
+}
+
+
+/* sections*/
+
+.firstSection {
+    position: relative;
+    bottom: 46px;
+    background-color: rgba(232, 217, 217, 0.3);
+    text-align: center;
+    height: 83vh;
+}
+
+.first button {
+    padding: 15px 60px;
+    margin: 0 15px;
+    border: 0px;
+    border-radius: 2px solid black;
+    font-weight: 800;
+    font-size: 1em;
+}
+
+.section1plansBtn {
+    background-color: #fb3e44;
+    box-shadow: 8px 8px lightpink;
+    color: white;
+}
+
+.section1plansBtn:hover {
+    transition: 0.4s;
+    background-color: lightpink;
+    box-shadow: 8px 8px #fb3e44;
+    color: blue;
+}
+
+.section1joinBtn {
+    background-color: white;
+}
+
+.section1joinBtn:hover {
+    transition: 0.3s;
+    background-color: lightgray;
+    color: blue;
+}
+
+Section .firstSection>* {
+    padding-top: 40px;
+}
+
+.firstSection h1 {
+    font-size: 3.5em;
+}
+
+.firstSection aside {
+    margin: 0px auto;
+    padding-top: 0px;
+    width: 390px;
+}
+
+.secondSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 5px;
+    height: 100vh;
+    position: relative;
+    bottom: 7vh;
+}
+
+.secondSection img {
+    width: 200px;
+    height: 200px;
+}
+
+.secondSection p {
+    text-align: center;
+    width: 82vw;
+    font-size: 1.2em;
+}
+
+.secondHeader {
+    background-color: rgba(255, 204, 53, 0.4);
+    width: 670px;
+    text-align: center;
+    transform: skew(10deg);
+}
+
+.secondHeader h2 {
+    font-size: 1.6em;
+    transform: skew(-10deg);
+}
+
+.thirdSection {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 5vw 0px 5vw;
+}
+
+.thirdSection h4 {
+    color: #ed1c24;
+}
+
+.thirdSection img {
+    width: 30px;
+    height: 30px;
+}
+
+.thirdSection article {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    margin: 0px auto;
+}
+
+.createOrg {
+    padding: 10px;
+    background-color: black;
+    width: 300px;
+    text-align: center;
+    margin: 8vh auto 80px auto;
+    box-shadow: 8px 8px lightgray;
+    font-weight: 800;
+}
+
+.createOrgContainer {
+    text-decoration: none;
+    color: white;
+}
+
+.createOrg:hover {
+    transition: 0.3s;
+    background-color: lightgray;
+    box-shadow: 8px 8px black;
+    color: black;
 }
